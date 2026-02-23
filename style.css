@@ -175,3 +175,18 @@ footer {
     color: #ff4500;
     transition: 0.3s;
 }
+/* --- Ajustes para la página de Bio --- */
+main ul {
+    margin-left: 40px;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+main ul li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+
+main ul li strong {
+    color: #ff4500;
+}
