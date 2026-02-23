@@ -2,47 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Acceso - Soulslike Chronicles</title>
+    <title>Biografía - Guillermo de Jesus Luna Sanchez</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="login-bg">
+<body class="home"> <!-- Usamos 'home' para que herede el estilo oscuro del blog -->
 
 <header>
-    <h1 class="ttl-lgn">🔥 Soulslike Chronicles 🔥</h1>
-    <p style="text-align:center; color:#aaa;">Solo los No Muertos pueden pasar...</p>
+    <h1>📜 Perfil del Desarrollador 📜</h1>
+    <p>Guillermo de Jesus Luna Sanchez</p>
 </header>
 
-<main class="login">
-    <form onsubmit="return validarLogin()">
-        <label>Portador de la Llama:</label>
-        <input type="text" id="usuario" placeholder="Guillermo de Jesus Luna Sanchez" required>
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="post1.html">Dark Souls I</a>
+    <a href="post2.html">Dark Souls II</a>
+    <a href="post3.html">Dark Souls III</a>
+    <a href="bio.html">Bio</a>
+</nav>
 
-        <label>Contraseña Ancestral:</label>
-        <input type="password" id="password" placeholder="••••••••" required>
+<main>
+    <h2>Trayectoria y Pasión</h2>
+    
+    <p>
+        Soy estudiante de <strong>Ingeniería en Sistemas Computacionales</strong> con una trayectoria marcada por la curiosidad tecnológica. 
+        A mis 42 años, este blog representa la culminación de un ejercicio académico en la materia de 
+        <strong>Desarrollo de Aplicaciones en Red</strong>, donde he aplicado mis conocimientos en arquitectura web y diseño UI.
+    </p>
 
-        <button type="submit">⚔️ Encender la Hoguera</button>
-    </form>
+    <p>
+        Mi relación con el mundo digital comenzó a los 6 años. Lo que inició como un simple pasatiempo frente a una pantalla, 
+        evolucionó en una comprensión profunda de los sistemas y las narrativas complejas, encontrando en el género 
+        <em>Soulslike</em> la metáfora perfecta para la ingeniería: <strong>análisis, paciencia y resolución de problemas.</strong>
+    </p>
 
-    <p id="mensaje"></p>
+    <h2>Habilidades Técnicas</h2>
+    <p>
+        A lo largo de este proyecto, he consolidado el manejo de:
+        <ul>
+            <li>Maquetación semántica con <strong>HTML5</strong>.</li>
+            <li>Diseño de interfaces y experiencia de usuario con <strong>CSS3</strong>.</li>
+            <li>Generación y curaduría de activos digitales mediante <strong>Inteligencia Artificial</strong>.</li>
+        </ul>
+    </p>
+
+    <!-- Aquí puedes poner una de las imágenes de guerreros que generamos como representación -->
+    <img src="battlle2.png" alt="Representación del desarrollador en el mundo Soulslike">
+
 </main>
 
-<script>
-function validarLogin() {
-    var user = document.getElementById("usuario").value;
-    var pass = document.getElementById("password").value;
-
-    if (user === "admin" && pass === "1234") {
-        window.location.href = "index.html";
-        return false;
-    } else {
-        var mensaje = document.getElementById("mensaje");
-        mensaje.innerHTML = "<span style='background-color: #8b0000; color: white; padding: 2px 8px; border-radius: 3px;'>⚠️ Has sido derrotado... Usuario o contraseña incorrectos</span>";
-        mensaje.style.textAlign = "center";
-        return false;
-    }
-}
-</script>
+<footer>
+    <p>© 2026 Soulslike Chronicles | Guillermo de Jesus Luna Sanchez</p>
+</footer>
 
 </body>
 </html>
